@@ -1,0 +1,1 @@
+kubeadm version: &version.Info{Major:"1", Minor:"33", EmulationMajor:"", EmulationMinor:"", MinCompatibilityMajor:"", MinCompatibilityMinor:"", GitVersion:"v1.33.1", GitCommit:"8adc0f041b8e7ad1d30e29cc59c6ae7a15e19828", GitTreeState:"clean", BuildDate:"2025-05-15T08:25:51Z", GoVersion:"go1.24.2", Compiler:"gc", Platform:"linux/amd64"}
