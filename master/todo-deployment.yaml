@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-deployment
+  labels:
+    app: todo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: todo
+  template:
+    metadata:
+      labels:
+        app: todo
+    spec:
+      containers:
+      - name: todo-container
+        image: todo-app:latest
+        imagePullPolicy: Never  # tar로 올렸기 때문에 외부에서 pull 안함
+        ports:
+        - containerPort: 5000
